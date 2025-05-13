@@ -1,8 +1,6 @@
-import { act, render, renderHook } from "@testing-library/react";
+import { act, renderHook } from "@testing-library/react";
 import useInputs from "./useInputs";
 import { ChangeEvent } from "react";
-import { mock } from "node:test";
-
 // 초기값 설정 테스트**: `initialValues`로 전달한 객체가 `values`에 올바르게 설정되는지 확인.
 // 단일 필드 업데이트 테스트**: `handleChange`로 한 필드의 값을 변경했을 때 `values`가 올바르게 업데이트되는지 확인.
 // 여러 필드 업데이트 테스트**: `handleChange`로 여러 필드를 변경했을 때 모든 값이 올바르게 반영되는지 확인.
